@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".InternalActivity"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_buat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/grey"
+            android:onClick="buatFile"
+            android:text="BUAT FILE"/>
+        <Button
+            android:id="@+id/btn_ubah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/grey"
+            android:onClick="ubahFile"
+            android:text="UBAH FILE"/>
+        <Button
+            android:id="@+id/btn_baca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/grey"
+            android:onClick="bacaFile"
+            android:text="BACA FILE"/>
+        <Button
+            android:id="@+id/btn_hapus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:onClick="hapusFile"
+            android:backgroundTint="@color/grey"
+            android:text="HAPUS FILE"/>
+        <TextView
+            android:id="@+id/text_baca"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="@color/greyDark"
+            android:ems="10"
+            android:gravity="top|left"
+            android:textColorHint="#000"
+            android:hint="Hasil Baca File"
+            android:inputType="textMultiLine"/>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Home"
+            android:backgroundTint="@color/grey"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</androidx.wear.widget.BoxInsetLayout>
