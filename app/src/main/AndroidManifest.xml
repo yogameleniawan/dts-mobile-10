@@ -26,8 +26,11 @@
             android:value="false" />
 
         <activity
+            android:name=".ExternalActivity"
+            android:label="@string/title_activity_external"></activity>
+        <activity
             android:name=".InternalActivity"
-            android:label="@string/title_activity_internal"></activity>
+            android:label="@string/title_activity_internal" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
